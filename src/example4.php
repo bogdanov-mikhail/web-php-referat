@@ -13,3 +13,7 @@ class TestStatic {
 
 echo TestStatic::$iAmStatic;
 TestStatic::callStatic();
+
+$test = new TestStatic();
+$test::$iAmStatic;
+$test::callStatic();
